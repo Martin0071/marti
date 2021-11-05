@@ -16,7 +16,7 @@ namespace RazorPagesMovie.Models
         public int nameOfPlane { get; set; }
         public string capacity_passengers { get; set; }
         public int capacity_businnes_class { get; set; }
-		
 
-	}
+
+    }
 }
