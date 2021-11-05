@@ -1,5 +1,5 @@
 C:\Users\marti\source\repos\WebApplication6\obj\Release\net5.0\PubTmp\Out\WebApplication6.exe
-C:\Users\marti\source\repos\WebApplication6\obj\Release\net5.0\PubTmp\Out\wwwroot\css\eRwDMy.jpg
+C:\Users\marti\source\repos\WebApplication6\obj\Release\net5.0\PubTmp\Out\wwwroot\css\6030110-fly-wallpaper-picture-background-clouds-flight-photo-fighter-sky-aviation-plane.jpg
 C:\Users\marti\source\repos\WebApplication6\obj\Release\net5.0\PubTmp\Out\wwwroot\css\site.css
 C:\Users\marti\source\repos\WebApplication6\obj\Release\net5.0\PubTmp\Out\wwwroot\css\StyleSheet.css
 C:\Users\marti\source\repos\WebApplication6\obj\Release\net5.0\PubTmp\Out\wwwroot\favicon.ico

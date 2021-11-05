@@ -10,8 +10,8 @@ namespace WebApplication6.Models
 		public int Id { get; set; }
 		public string location_from { get; set; }
 		public string location_to { get; set; }
-		public string date_and_time_taking_off { get; set; }
-		public string date_and_time_landing { get; set; }
+		public DateTime date_and_time_taking_off { get; set; }
+		public DateTime date_and_time_landing { get; set; }
 		public string type_of_plane { get; set; }
 		public string unique { get; set; }
 		public string pilot_name { get; set; }

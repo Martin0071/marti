@@ -22,5 +22,7 @@ namespace WebApplication6.Data
         public DbSet<WebApplication6.Models.AdminLogin> AdminLogin { get; set; }
 
         public DbSet<WebApplication6.Models.UserReserve> UserReserve { get; set; }
+
+        public DbSet<WebApplication6.Models.Flight> Flight_1 { get; set; }
     }
 }
