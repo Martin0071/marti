@@ -7,4 +7,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <_PublishTargetUrl>F:\PGTKSITE\Site</_PublishTargetUrl>
     <History>True|2021-10-28T16:07:50.4562114Z;True|2021-10-28T19:06:48.2326407+03:00;True|2021-10-28T12:08:11.1430827+03:00;</History>
   </PropertyGroup>
+  <ItemGroup>
+    <File Include="wwwroot/css/6030110-fly-wallpaper-picture-background-clouds-flight-photo-fighter-sky-aviation-plane.jpg">
+      <publishTime>11/05/2021 17:14:21</publishTime>
+    </File>
+  </ItemGroup>
 </Project>

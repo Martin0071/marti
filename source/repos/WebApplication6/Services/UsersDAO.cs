@@ -49,7 +49,7 @@ namespace WebApplication6.Services
 			{
 				using (SqlCommand comm = new SqlCommand())
 				{
-					
+
 					comm.Connection = conn;
 					comm.CommandType = CommandType.Text;
 					comm.CommandText = _query;
@@ -71,8 +71,46 @@ namespace WebApplication6.Services
 
 					}
 				}
+
 			}
 			return registered;
+		}
+		public bool Flight(UserReserve flight)
+		{
+			Boolean flightRegistered = false;
+			string _connStr = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Flights;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+			string _querry = "INSERT INTO dbo.FlightBase (first_name, second_name, family_name, type, date_landing, date_leaving) values (@first_name, @second_name, @family_name, @type, @date1, @date2)";
+			using (SqlConnection conn = new SqlConnection(_connStr))
+			{
+				using (SqlCommand comm = new SqlCommand())
+				{ 
+					comm.Connection = conn;
+					comm.CommandType = CommandType.Text;
+					comm.CommandText = _querry;
+					comm.Parameters.AddWithValue("@first_name", flight.first_name);
+					comm.Parameters.AddWithValue("@second_name", flight.second_name);
+					comm.Parameters.AddWithValue("@family_name", flight.last_name);
+					comm.Parameters.AddWithValue("@type", flight.type);
+					comm.Parameters.AddWithValue("@date1", flight.date_and_time_landing);
+					comm.Parameters.AddWithValue("@date2", flight.date_and_time_taking_off);
+					try
+					{
+						conn.Open();
+						comm.ExecuteNonQuery();
+						flightRegistered = true;
+						Console.WriteLine("registered");
+					}
+					catch (SqlException ex)
+					{
+						Console.WriteLine(ex.Message);
+						Console.WriteLine("not registered");
+
+					}
+					Console.WriteLine(flightRegistered);
+				}
+
+			}
+			return flightRegistered;
 		}
 
 	}
