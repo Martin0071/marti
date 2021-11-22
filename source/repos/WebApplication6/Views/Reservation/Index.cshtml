@@ -1,0 +1,118 @@
+﻿@model WebApplication6.Models.UserReserve
+<head>
+	<style>
+		.divright {
+			float:left;
+			color:white;
+		}
+		.divleft{
+			float: right;
+			color: white;
+		}
+		
+	</style>
+</head>
+<h4>UserReserve</h4>
+<hr />
+
+   
+<form asp-action="ProcessReserve">
+	<div class="divright">
+		<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+		<label asp-for="first_name" class="control-label"></label>
+		<input asp-for="first_name" class="form-control" />
+		<span asp-validation-for="first_name" class="text-danger"></span>
+
+
+		<label asp-for="second_name" class="control-label"></label>
+		<input asp-for="second_name" class="form-control" />
+		<span asp-validation-for="second_name" class="text-danger"></span>
+
+
+		<label asp-for="last_name" class="control-label"></label>
+		<input asp-for="last_name" class="form-control" />
+		<span asp-validation-for="last_name" class="text-danger"></span>
+		<label asp-for="EGN" class="control-label"></label>
+		<input asp-for="EGN" class="form-control" />
+		<span asp-validation-for="EGN" class="text-danger"></span>
+
+
+		<label asp-for="phone" class="control-label"></label>
+		<input asp-for="phone" class="form-control" />
+		<span asp-validation-for="phone" class="text-danger"></span>
+
+
+		<label asp-for="nationality" class="control-label"></label>
+		<input asp-for="nationality" class="form-control" />
+		<span asp-validation-for="nationality" class="text-danger"></span>
+
+		<div style="margin-top:100px;">
+			<label asp-for="type" class="control-label">TYPE</label>
+			<select name="type" id="type" style="font-size: 20px; border-radius: 10px;">
+				<option asp-for="type">regular</option>
+				<option asp-for="type">business</option>
+
+			</select>
+		</div>
+	</div>
+	<div class="divleft">
+
+		<label asp-for="location_from" class="control-label"></label>
+		<input asp-for="location_from" class="form-control" />
+		<span asp-validation-for="location_from" class="text-danger"></span>
+
+
+		<label asp-for="location_to" class="control-label"></label>
+		<input asp-for="location_to" class="form-control" />
+		<span asp-validation-for="location_to" class="text-danger"></span>
+
+		<label asp-for="date_and_time_taking_off" class="control-label"></label>
+		<input asp-for="date_and_time_taking_off" class="form-control" />
+		<span asp-validation-for="date_and_time_taking_off" class="text-danger"></span>
+		
+
+
+		<label asp-for="date_and_time_landing" class="control-label"></label>
+		<input asp-for="date_and_time_landing" class="form-control" />
+		<span asp-validation-for="date_and_time_landing" class="text-danger"></span>
+		
+
+
+		<label asp-for="type_of_plane" class="control-label"></label>
+		<input asp-for="type_of_plane" class="form-control" />
+		<span asp-validation-for="type_of_plane" class="text-danger"></span>
+
+
+		<label asp-for="unique" class="control-label"></label>
+		<input asp-for="unique" class="form-control" />
+		<span asp-validation-for="unique" class="text-danger"></span>
+
+		<label asp-for="pilot_name" class="control-label"></label>
+		<input asp-for="pilot_name" class="form-control" />
+		<span asp-validation-for="pilot_name" class="text-danger"></span>
+
+
+		<label asp-for="pass_cap" class="control-label"></label>
+		<input asp-for="pass_cap" class="form-control" />
+		<span asp-validation-for="pass_cap" class="text-danger"></span>
+
+
+		<label asp-for="buss_pass_cap" class="control-label"></label>
+		<input asp-for="buss_pass_cap" class="form-control" />
+		<span asp-validation-for="buss_pass_cap" class="text-danger"></span>
+
+
+		<input type="submit" value="Create" class="btn btn-primary" />
+		
+	</div>
+
+</form>
+
+			
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
