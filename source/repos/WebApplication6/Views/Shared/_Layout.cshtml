@@ -6,7 +6,27 @@
 	<title>@ViewData["Title"] - ПолетиООД</title>
 	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="~/css/site.css" />
-	<link rel="stylesheet" runat="server" media="screen" href="~/css/StyleSheet.css" />
+	<link rel="stylesheet" href="~/css/StyleSheet.css" />
+	<link rel="shortcut icon" type="image/ico" href="~/css/favicon.ico">
+	<script>
+		@{
+
+										int counter = 1;
+										counter++;
+										if (counter == 1)
+										{
+											Console.WriteLine("Button About has been clicked 1 time!");
+										}
+										else {
+											Console.WriteLine($"Button About has been clicked {counter} times!");
+										}
+										int sum = counter++;
+										Console.WriteLine($"Total button clicks {sum}");
+								}
+		function MyFunction() {
+			alert("You clicked the About button.... I have logged the data on my local console. Enjoy the minigame!")
+		}
+	</script>
 </head>
 <body>
 	<header>
@@ -25,6 +45,10 @@
 						<li class="nav-item">
 							<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Бум</a>
 						</li>
+						<li class="nav-item" style="cursor: not-allowed">
+
+							<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About" onclick="MyFunction()">About</a>
+						</li>
 
 					</ul>
 				</div>
@@ -38,8 +62,8 @@
 	</div>
 
 	<footer class="border-top footer text-muted">
-		<div class="container">
-			&copy; 2021 - Хехе копирайт мадафака
+		<div class="container" style="color: white;">
+			&copy; 2021 - Копирайт 2021
 		</div>
 	</footer>
 	<script src="~/lib/jquery/dist/jquery.min.js"></script>

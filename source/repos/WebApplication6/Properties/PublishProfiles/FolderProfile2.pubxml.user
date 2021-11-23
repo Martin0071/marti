@@ -5,6 +5,11 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_PublishTargetUrl>F:\PGTKSITE\Site</_PublishTargetUrl>
-    <History>True|2021-10-28T16:45:27.1994390Z;True|2021-10-28T19:09:23.6628970+03:00;</History>
+    <History>True|2021-11-05T20:45:58.4397007Z;True|2021-11-05T20:51:30.2609483+02:00;True|2021-10-28T19:45:27.1994390+03:00;True|2021-10-28T19:09:23.6628970+03:00;</History>
   </PropertyGroup>
+  <ItemGroup>
+    <File Include="wwwroot/css/6030110-fly-wallpaper-picture-background-clouds-flight-photo-fighter-sky-aviation-plane.jpg">
+      <publishTime>11/05/2021 17:14:21</publishTime>
+    </File>
+  </ItemGroup>
 </Project>

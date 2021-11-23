@@ -23,6 +23,10 @@ namespace WebApplication6.Services
 		{
 			return UsersDAO.createAdmin(adminreg);
 		}
+		public bool FlightIsRegged(UserReserve flight)
+		{
+			return UsersDAO.Flight(flight);
+		}
 
 	}
 }

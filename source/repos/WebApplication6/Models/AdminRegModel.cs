@@ -17,6 +17,7 @@ namespace RazorPagesMovie.Models
         public string addres { get; set; }
         public int phone { get; set; }
         public string role { get; set; }
+		
 
-    }
+	}
 }

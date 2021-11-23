@@ -1,7 +1,11 @@
 ﻿h1 {
-	color: black;
+	color: white;
 	font-family: verdana;
 	font-size: 300%;
+}
+p{
+	color: white;
+	font-family: Verdana;
 }
 
 #box {
@@ -15,20 +19,9 @@
 	align-self: center;
 }
 
-.center {
-	width: 10000px;
-	height: 12220px;
-	border-width: 2px;
-	border-style: solid;
-	border-color: blue;
-	background: #CCC;
-}
-
-
 
 .button {
-	background-color: cyan;
-	border: none;
+	background-color: #001f3f;
 	color: white;
 	padding: 15px 32px;
 	text-align: center;
@@ -40,5 +33,8 @@
 }
 
 body {
-	background-image: url('eRwDMy.jpg');
+	background-image: url("6030110-fly-wallpaper-picture-background-clouds-flight-photo-fighter-sky-aviation-plane.jpg");
+	background-repeat: no-repeat;
+	background-size: 2160px;
+	
 }

@@ -436,3 +436,4 @@ C:\Users\marti\source\repos\WebApplication6\obj\Release\net5.0\WebApplication6.p
 C:\Users\marti\source\repos\WebApplication6\obj\Release\net5.0\WebApplication6.genruntimeconfig.cache
 C:\Users\marti\source\repos\WebApplication6\obj\Release\net5.0\Razor\Views\Register\Index.cshtml.g.cs
 C:\Users\marti\source\repos\WebApplication6\obj\Release\net5.0\Razor\Views\Register\RegisterSucess.cshtml.g.cs
+C:\Users\marti\source\repos\WebApplication6\obj\Release\net5.0\Razor\Views\Reservation\Index.cshtml.g.cs
