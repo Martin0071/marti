@@ -440,3 +440,4 @@ C:\Users\marti\source\repos\WebApplication6\obj\Debug\net5.0\Razor\Views\Reserva
 C:\Users\marti\source\repos\WebApplication6\obj\Debug\net5.0\Razor\Views\Reservation\View.cshtml.g.cs
 C:\Users\marti\source\repos\WebApplication6\obj\Debug\net5.0\Razor\Views\Reservation\ReserveSucess.cshtml.g.cs
 C:\Users\marti\source\repos\WebApplication6\obj\Debug\net5.0\Razor\Views\AdminView\Index.cshtml.g.cs
+C:\Users\marti\source\repos\WebApplication6\obj\Debug\net5.0\Razor\Views\Home\About.cshtml.g.cs

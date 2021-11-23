@@ -8,6 +8,25 @@
 	<link rel="stylesheet" href="~/css/site.css" />
 	<link rel="stylesheet" href="~/css/StyleSheet.css" />
 	<link rel="shortcut icon" type="image/ico" href="~/css/favicon.ico">
+	<script>
+		@{
+
+										int counter = 1;
+										counter++;
+										if (counter == 1)
+										{
+											Console.WriteLine("Button About has been clicked 1 time!");
+										}
+										else {
+											Console.WriteLine($"Button About has been clicked {counter} times!");
+										}
+										int sum = counter++;
+										Console.WriteLine($"Total button clicks {sum}");
+								}
+		function MyFunction() {
+			alert("You clicked the About button.... I have logged the data on my local console. Enjoy the minigame!")
+		}
+	</script>
 </head>
 <body>
 	<header>
@@ -25,6 +44,10 @@
 						</li>
 						<li class="nav-item">
 							<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Бум</a>
+						</li>
+						<li class="nav-item" style="cursor: not-allowed">
+
+							<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About" onclick="MyFunction()">About</a>
 						</li>
 
 					</ul>
