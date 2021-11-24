@@ -440,7 +440,6 @@ C:\Users\marti\source\repos\WebApplication6\obj\Debug\net5.0\Razor\Views\Reserva
 C:\Users\marti\source\repos\WebApplication6\obj\Debug\net5.0\Razor\Views\Reservation\View.cshtml.g.cs
 C:\Users\marti\source\repos\WebApplication6\obj\Debug\net5.0\Razor\Views\Reservation\ReserveSucess.cshtml.g.cs
 C:\Users\marti\source\repos\WebApplication6\obj\Debug\net5.0\Razor\Views\AdminView\Index.cshtml.g.cs
-C:\Users\marti\source\repos\WebApplication6\obj\Debug\net5.0\Razor\Views\Home\About.cshtml.g.cs
 C:\Users\marti\OneDrive\Desktop\marti-branch\source\repos\WebApplication6\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\marti\OneDrive\Desktop\marti-branch\source\repos\WebApplication6\bin\Debug\net5.0\appsettings.json
 C:\Users\marti\OneDrive\Desktop\marti-branch\source\repos\WebApplication6\bin\Debug\net5.0\WebApplication6.exe
@@ -883,3 +882,4 @@ C:\Users\marti\OneDrive\Desktop\marti-branch\source\repos\WebApplication6\obj\De
 C:\Users\marti\OneDrive\Desktop\marti-branch\source\repos\WebApplication6\obj\Debug\net5.0\ref\WebApplication6.dll
 C:\Users\marti\OneDrive\Desktop\marti-branch\source\repos\WebApplication6\obj\Debug\net5.0\WebApplication6.pdb
 C:\Users\marti\OneDrive\Desktop\marti-branch\source\repos\WebApplication6\obj\Debug\net5.0\WebApplication6.genruntimeconfig.cache
+C:\Users\marti\source\repos\WebApplication6\obj\Debug\net5.0\Razor\Views\Home\About.cshtml.g.cs
