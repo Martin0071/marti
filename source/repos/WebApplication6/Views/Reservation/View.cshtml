@@ -1,0 +1,68 @@
+﻿@model WebApplication6.Models.Flight
+
+<h4 style="color: white;">Flight</h4>
+<hr />
+<div class="row" style="color: white;">
+	<div class="col-md-4">
+		<form asp-action="Index">
+			<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+			<div class="form-group">
+				<label asp-for="location_from" class="control-label"></label>
+				<input asp-for="location_from" class="form-control" />
+				<span asp-validation-for="location_from" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="location_to" class="control-label"></label>
+				<input asp-for="location_to" class="form-control" />
+				<span asp-validation-for="location_to" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="date_and_time_taking_off" class="control-label"></label>
+				<input asp-for="date_and_time_taking_off" class="form-control" />
+				<span asp-validation-for="date_and_time_taking_off" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="date_and_time_landing" class="control-label"></label>
+				<input asp-for="date_and_time_landing" class="form-control" />
+				<span asp-validation-for="date_and_time_landing" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="type_of_plane" class="control-label"></label>
+				<input asp-for="type_of_plane" class="form-control" />
+				<span asp-validation-for="type_of_plane" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="unique" class="control-label"></label>
+				<input asp-for="unique" class="form-control" />
+				<span asp-validation-for="unique" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="pilot_name" class="control-label"></label>
+				<input asp-for="pilot_name" class="form-control" />
+				<span asp-validation-for="pilot_name" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="pass_cap" class="control-label"></label>
+				<input asp-for="pass_cap" class="form-control" />
+				<span asp-validation-for="pass_cap" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="buss_pass_cap" class="control-label"></label>
+				<input asp-for="buss_pass_cap" class="form-control" />
+				<span asp-validation-for="buss_pass_cap" class="text-danger"></span>
+			</div>
+
+			<div class="form-group">
+				<input type="submit" value="Create" class="btn btn-primary" />
+			</div>
+		</form>
+	</div>
+</div>
+
+<div>
+	<a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+	@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
