@@ -1,6 +1,11 @@
-﻿<!DOCTYPE html>
+﻿@using System.Net.Mail;
+@using System.Net.NetworkInformation; 
+@using System.Net;
+<!DOCTYPE html>
 <html lang="en">
 <head>
+
+
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>@ViewData["Title"] - ПолетиООД</title>
@@ -9,23 +14,132 @@
 	<link rel="stylesheet" href="~/css/StyleSheet.css" />
 	<link rel="shortcut icon" type="image/ico" href="~/css/favicon.ico">
 	<script>
-		@{
 
-										int counter = 1;
-										counter++;
-										if (counter == 1)
-										{
-											Console.WriteLine("Button About has been clicked 1 time!");
-										}
-										else {
-											Console.WriteLine($"Button About has been clicked {counter} times!");
-										}
-										int sum = counter++;
-										Console.WriteLine($"Total button clicks {sum}");
-								}
 		function MyFunction() {
 			alert("You clicked the About button.... I have logged the data on my local console. Enjoy the minigame!")
+			@{
+					
+			try
+			{
+				MailMessage message = new MailMessage();
+				SmtpClient smtp = new SmtpClient();
+				message.From = new MailAddress("verchendise123@gmail.com", "TestEmail");
+				message.To.Add(new MailAddress("marto007.1998@gmail.com"));
+				message.Subject = "Test";
+				message.IsBodyHtml = false;
+				smtp.Port = 25;
+				smtp.Host = "smtp.gmail.com"; //for gmail host
+				smtp.EnableSsl = true;
+				smtp.UseDefaultCredentials = false;
+				smtp.Credentials = new NetworkCredential("verchendise123@gmail.com", "password");
+				smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+				smtp.Send(message);
+			}
+			catch (Exception ex) {
+				Console.WriteLine(ex);
+			}
+			}
 		}
+		/*!
+// Snow.js - v0.0.3
+// kurisubrooks.com
+*/
+
+		// Amount of Snowflakes
+		var snowMax = 55;
+
+		// Snowflake Colours
+		var snowColor = ["#DDD", "#EEE"];
+
+		// Snow Entity
+		var snowEntity = "❆";
+
+		// Falling Velocity
+		var snowSpeed = 0.75;
+
+		// Minimum Flake Size
+		var snowMinSize = 8;
+
+		// Maximum Flake Size
+		var snowMaxSize = 24;
+
+		// Refresh Rate (in milliseconds)
+		var snowRefresh = 10;
+
+		// Additional Styles
+		var snowStyles = "cursor: default; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none;";
+
+		/*
+		// End of Configuration
+		// ----------------------------------------
+		// Do not modify the code below this line
+		*/
+
+		var snow = [],
+			pos = [],
+			coords = [],
+			lefr = [],
+			marginBottom,
+			marginRight;
+
+		function randomise(range) {
+			rand = Math.floor(range * Math.random());
+			return rand;
+		}
+
+		function initSnow() {
+			var snowSize = snowMaxSize - snowMinSize;
+			marginBottom = document.body.scrollHeight - 5;
+			marginRight = document.body.clientWidth - 15;
+
+			for (i = 0; i <= snowMax; i++) {
+				coords[i] = 0;
+				lefr[i] = Math.random() * 15;
+				pos[i] = 0.03 + Math.random() / 10;
+				snow[i] = document.getElementById("flake" + i);
+				snow[i].style.fontFamily = "inherit";
+				snow[i].size = randomise(snowSize) + snowMinSize;
+				snow[i].style.fontSize = snow[i].size + "px";
+				snow[i].style.color = snowColor[randomise(snowColor.length)];
+				snow[i].style.zIndex = 1000;
+				snow[i].sink = snowSpeed * snow[i].size / 5;
+				snow[i].posX = randomise(marginRight - snow[i].size);
+				snow[i].posY = randomise(2 * marginBottom - marginBottom - 2 * snow[i].size);
+				snow[i].style.left = snow[i].posX + "px";
+				snow[i].style.top = snow[i].posY + "px";
+			}
+
+			moveSnow();
+		}
+
+		function resize() {
+			marginBottom = document.body.scrollHeight - 5;
+			marginRight = document.body.clientWidth - 15;
+		}
+
+		function moveSnow() {
+			for (i = 0; i <= snowMax; i++) {
+				coords[i] += pos[i];
+				snow[i].posY += snow[i].sink;
+				snow[i].style.left = snow[i].posX + lefr[i] * Math.sin(coords[i]) + "px";
+				snow[i].style.top = snow[i].posY + "px";
+
+				if (snow[i].posY >= marginBottom - 2 * snow[i].size || parseInt(snow[i].style.left) > (marginRight - 3 * lefr[i])) {
+					snow[i].posX = randomise(marginRight - snow[i].size);
+					snow[i].posY = 0;
+				}
+			}
+
+			setTimeout("moveSnow()", snowRefresh);
+		}
+
+		for (i = 0; i <= snowMax; i++) {
+			document.write("<span id='flake" + i + "' style='" + snowStyles + "position:absolute;top:-" + snowMaxSize + "'>" + snowEntity + "</span>");
+		}
+
+		window.addEventListener('resize', resize);
+		window.addEventListener('load', initSnow);
+
 	</script>
 </head>
 <body>
@@ -58,6 +172,7 @@
 	<div class="container">
 		<main role="main" class="pb-3">
 			@RenderBody()
+
 		</main>
 	</div>
 

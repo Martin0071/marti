@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\css\aircraft-background-1.jpg" />
     <None Include="wwwroot\css\StyleSheet.css" />
   </ItemGroup>
 
