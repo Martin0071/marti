@@ -1,48 +1,47 @@
 ﻿@model WebApplication6.Models.AdminView
+@{
+	ViewBag.Title = "Index";
+}
+<h2>Flight record</h2>
+@* Table for showing the list of Records from the database *@
+<br />
+<br />
+<table class="table table-bordered table-hover" id="datatable">
+	<thead>
+		<tr>
+			<th style="padding:10px; border-style: solid;">First name</th>
+			<th>Second name</th>
+			<th style="padding:10px;">Family name</th>
+			<th>type</th>
+			<th>Date landing</th>
+			<th>Date leaving</th>
 
-<div>
-    <h4>AdminView</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.first_name)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.first_name)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.second_name)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.second_name)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.family_name)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.family_name)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.type)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.type)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.date_landing)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.date_landing)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.date_leaving)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.date_leaving)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+		</tr>
+	</thead>
+	<tbody class="tbody" id="tblbody">
+		@foreach (var item in Model.userinfo)
+		{
+		<tr>
+			<td>@Html.DisplayFor(m => item.first_name)</td>
+
+			<td>@Html.DisplayFor(m => item.second_name)</td>
+
+			<td>@Html.DisplayFor(m => item.family_name)</td>
+
+			<td style="padding:10px;">@Html.DisplayFor(m => item.type)</td>
+
+			<td style="padding:10px;">@Html.DisplayFor(m => item.dateLanding)</td>
+
+			<td>@Html.DisplayFor(m => item.dateLeaving)</td>
+			<td>
+				<a style="color: blue" class="btnEdit" href="javascript:;">Edit</a>
+				<a class="btnUpdate" href="javascript:;" style="display:none">Update</a>
+				<a class="btnCancel" href="javascript:;" style="display:none">Cancel</a>
+				<a style="color: blue" class="btnDelete" href="javascript:;" onclick="deleteRow();">Delete</a>
+			</td>
+		</tr>
+		}
+	</tbody>
+</table>
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>

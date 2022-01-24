@@ -239,7 +239,6 @@ C:\Users\marti\source\repos\WebApplication6\bin\Debug\net5.0\refs\System.Runtime
 C:\Users\marti\source\repos\WebApplication6\bin\Debug\net5.0\refs\System.Runtime.Serialization.Json.dll
 C:\Users\marti\source\repos\WebApplication6\bin\Debug\net5.0\refs\System.Runtime.Serialization.Primitives.dll
 C:\Users\marti\source\repos\WebApplication6\bin\Debug\net5.0\refs\System.Runtime.Serialization.Xml.dll
-C:\Users\marti\source\repos\WebApplication6\bin\Debug\net5.0\refs\System.Security.AccessControl.dll
 C:\Users\marti\source\repos\WebApplication6\bin\Debug\net5.0\refs\System.Security.Claims.dll
 C:\Users\marti\source\repos\WebApplication6\bin\Debug\net5.0\refs\System.Security.Cryptography.Algorithms.dll
 C:\Users\marti\source\repos\WebApplication6\bin\Debug\net5.0\refs\System.Security.Cryptography.Cng.dll
@@ -249,7 +248,6 @@ C:\Users\marti\source\repos\WebApplication6\bin\Debug\net5.0\refs\System.Securit
 C:\Users\marti\source\repos\WebApplication6\bin\Debug\net5.0\refs\System.Security.Cryptography.X509Certificates.dll
 C:\Users\marti\source\repos\WebApplication6\bin\Debug\net5.0\refs\System.Security.Cryptography.Xml.dll
 C:\Users\marti\source\repos\WebApplication6\bin\Debug\net5.0\refs\System.Security.dll
-C:\Users\marti\source\repos\WebApplication6\bin\Debug\net5.0\refs\System.Security.Permissions.dll
 C:\Users\marti\source\repos\WebApplication6\bin\Debug\net5.0\refs\System.Security.Principal.dll
 C:\Users\marti\source\repos\WebApplication6\bin\Debug\net5.0\refs\System.Security.Principal.Windows.dll
 C:\Users\marti\source\repos\WebApplication6\bin\Debug\net5.0\refs\System.Security.SecureString.dll
@@ -277,7 +275,6 @@ C:\Users\marti\source\repos\WebApplication6\bin\Debug\net5.0\refs\System.ValueTu
 C:\Users\marti\source\repos\WebApplication6\bin\Debug\net5.0\refs\System.Web.dll
 C:\Users\marti\source\repos\WebApplication6\bin\Debug\net5.0\refs\System.Web.HttpUtility.dll
 C:\Users\marti\source\repos\WebApplication6\bin\Debug\net5.0\refs\System.Windows.dll
-C:\Users\marti\source\repos\WebApplication6\bin\Debug\net5.0\refs\System.Windows.Extensions.dll
 C:\Users\marti\source\repos\WebApplication6\bin\Debug\net5.0\refs\System.Xml.dll
 C:\Users\marti\source\repos\WebApplication6\bin\Debug\net5.0\refs\System.Xml.Linq.dll
 C:\Users\marti\source\repos\WebApplication6\bin\Debug\net5.0\refs\System.Xml.ReaderWriter.dll
@@ -338,7 +335,6 @@ C:\Users\marti\source\repos\WebApplication6\obj\Debug\net5.0\WebApplication6.Tag
 C:\Users\marti\source\repos\WebApplication6\obj\Debug\net5.0\WebApplication6.TagHelpers.output.cache
 C:\Users\marti\source\repos\WebApplication6\obj\Debug\net5.0\WebApplication6.RazorCoreGenerate.cache
 C:\Users\marti\source\repos\WebApplication6\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\marti\source\repos\WebApplication6\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\marti\source\repos\WebApplication6\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\marti\source\repos\WebApplication6\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\marti\source\repos\WebApplication6\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -439,7 +435,6 @@ C:\Users\marti\source\repos\WebApplication6\obj\Debug\net5.0\WebApplication6.csp
 C:\Users\marti\source\repos\WebApplication6\obj\Debug\net5.0\Razor\Views\Reservation\Index.cshtml.g.cs
 C:\Users\marti\source\repos\WebApplication6\obj\Debug\net5.0\Razor\Views\Reservation\View.cshtml.g.cs
 C:\Users\marti\source\repos\WebApplication6\obj\Debug\net5.0\Razor\Views\Reservation\ReserveSucess.cshtml.g.cs
-C:\Users\marti\source\repos\WebApplication6\obj\Debug\net5.0\Razor\Views\AdminView\Index.cshtml.g.cs
 C:\Users\marti\OneDrive\Desktop\marti-branch\source\repos\WebApplication6\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\marti\OneDrive\Desktop\marti-branch\source\repos\WebApplication6\bin\Debug\net5.0\appsettings.json
 C:\Users\marti\OneDrive\Desktop\marti-branch\source\repos\WebApplication6\bin\Debug\net5.0\WebApplication6.exe
@@ -883,3 +878,16 @@ C:\Users\marti\OneDrive\Desktop\marti-branch\source\repos\WebApplication6\obj\De
 C:\Users\marti\OneDrive\Desktop\marti-branch\source\repos\WebApplication6\obj\Debug\net5.0\WebApplication6.pdb
 C:\Users\marti\OneDrive\Desktop\marti-branch\source\repos\WebApplication6\obj\Debug\net5.0\WebApplication6.genruntimeconfig.cache
 C:\Users\marti\source\repos\WebApplication6\obj\Debug\net5.0\Razor\Views\Home\About.cshtml.g.cs
+C:\Users\marti\source\repos\WebApplication6\bin\Debug\net5.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\marti\source\repos\WebApplication6\bin\Debug\net5.0\System.Drawing.Common.dll
+C:\Users\marti\source\repos\WebApplication6\bin\Debug\net5.0\System.Security.AccessControl.dll
+C:\Users\marti\source\repos\WebApplication6\bin\Debug\net5.0\System.Security.Permissions.dll
+C:\Users\marti\source\repos\WebApplication6\bin\Debug\net5.0\System.Windows.Extensions.dll
+C:\Users\marti\source\repos\WebApplication6\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\marti\source\repos\WebApplication6\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\marti\source\repos\WebApplication6\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\marti\source\repos\WebApplication6\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.AccessControl.dll
+C:\Users\marti\source\repos\WebApplication6\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\System.Windows.Extensions.dll
+C:\Users\marti\source\repos\WebApplication6\obj\Debug\net5.0\Razor\Views\AdminView\Index.cshtml.g.cs
+C:\Users\marti\source\repos\WebApplication6\bin\Debug\net5.0\WebGridMvc.dll
+C:\Users\marti\source\repos\WebApplication6\obj\Debug\net5.0\Razor\Views\Home\Contact.cshtml.g.cs

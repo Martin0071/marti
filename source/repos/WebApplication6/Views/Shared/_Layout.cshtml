@@ -15,31 +15,6 @@
 	<link rel="shortcut icon" type="image/ico" href="~/css/favicon.ico">
 	<script>
 
-		function MyFunction() {
-			alert("You clicked the About button.... I have logged the data on my local console. Enjoy the minigame!")
-			@{
-					
-			try
-			{
-				MailMessage message = new MailMessage();
-				SmtpClient smtp = new SmtpClient();
-				message.From = new MailAddress("verchendise123@gmail.com", "TestEmail");
-				message.To.Add(new MailAddress("marto007.1998@gmail.com"));
-				message.Subject = "Test";
-				message.IsBodyHtml = false;
-				smtp.Port = 25;
-				smtp.Host = "smtp.gmail.com"; //for gmail host
-				smtp.EnableSsl = true;
-				smtp.UseDefaultCredentials = false;
-				smtp.Credentials = new NetworkCredential("verchendise123@gmail.com", "password");
-				smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
-				smtp.Send(message);
-			}
-			catch (Exception ex) {
-				Console.WriteLine(ex);
-			}
-			}
-		}
 		/*!
 // Snow.js - v0.0.3
 // kurisubrooks.com
@@ -157,11 +132,10 @@
 							<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Бум</a>
+							<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Contact">Свържете се с нас</a>
 						</li>
-						<li class="nav-item" style="cursor: not-allowed">
-
-							<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About" onclick="MyFunction()">About</a>
+						<li class="nav-item">
+							<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About">За нас</a>
 						</li>
 
 					</ul>
@@ -171,8 +145,9 @@
 	</header>
 	<div class="container">
 		<main role="main" class="pb-3">
-			@RenderBody()
 
+			@RenderBody()
+			
 		</main>
 	</div>
 

@@ -11,6 +11,8 @@ namespace WebApplication6.Controllers
 {
 	public class LoginController : Controller
 	{
+		
+		
 		public IActionResult Index()
 		{
 
@@ -31,6 +33,6 @@ namespace WebApplication6.Controllers
 			
 		}
 
-		
+
 	}
 }

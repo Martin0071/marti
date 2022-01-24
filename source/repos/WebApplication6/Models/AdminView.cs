@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -14,6 +15,8 @@ namespace WebApplication6.Models
 		public string type { get; set; }
 		public DateTime date_landing { get; set; }
 		public DateTime date_leaving { get; set; }
-
+		public string dateLanding { get; set; }
+		public string dateLeaving { get; set; }
+		public List<AdminView> userinfo = new List<AdminView>();
 	}
 }
